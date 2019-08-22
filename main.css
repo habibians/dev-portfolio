@@ -67,3 +67,16 @@ h2 {
 .footer-content {
     font-size: small;
 }
+
+#portfolio {
+    padding-top: 200px;
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bio {
+    padding-top: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
