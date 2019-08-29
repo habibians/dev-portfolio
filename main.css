@@ -8,13 +8,18 @@ body {
     font-size: 20px;
     color: #444;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 nav,
 footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: #B7B5B3;
+}
+
+footer {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 nav {
@@ -27,33 +32,62 @@ nav {
 
 header {
     padding: 12% 0;
+    font-family: 'Yeseva One', cursive;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #EBE9E9;
+    color: #2D3235;
 }
 
 section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-    text-align: justify;
+    padding: 3% 0;
+    margin: -10px;
+    background-color: #EBE9E9;
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 150%;
+    color: #2D3235;
 }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #A5B5BF;
+}
+
+section p {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+section ul {
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    color: #2D3235;
 }
 
 .links {
     float: right;
     font-size: 16px;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .links li {
     display: inline-block;
     margin-left: 30px;
     color: white;
+}
+
+#bio {
+    margin: 0 auto;
+}
+
+#portfolio {
+    margin: 0 auto;
 }
 
 .content {
@@ -68,15 +102,22 @@ h2 {
     font-size: small;
 }
 
-#portfolio {
-    padding-top: 200px;
-    width: 970px;
-    margin: 0 auto;
-    text-align: center;
+a:link {
+    color: #000;
+    font-weight: bolder;
 }
 
-#bio {
-    padding-top: 200px;
-    margin: 0 auto;
-    text-align: center;
+a:visited {
+    color: #000;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #000;
+    font-weight: bolder;
+}
+
+a:active {
+    color: #000;
+    font-weight: bolder;
 }
