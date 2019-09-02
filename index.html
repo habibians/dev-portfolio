@@ -16,14 +16,12 @@
 <body>
 
 <nav role="navigation">
-  <div class="navbar-collapse" id="myNavbar">
-    <ul class="links">
-      <ul class="links">
-        <li><a class="jumper" href="#bio">Bio</a></li>
-        <li><a class="jumper" href="#portfolio">Portfolio</a></li>
-        <li><a target="_blank" href="https://github.com/habibians">Github</a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/habib-daof-8b17168/">LinkedIn</a></li>
-      </ul>
+  <div class="table">
+    <ul class="horizontal-list">
+      <li><a class="jumper" href="#bio">Bio</a></li>
+      <li><a class="jumper" href="#portfolio">Portfolio</a></li>
+      <li><a target="_blank" href="https://github.com/habibians">Github</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/habib-daof-8b17168/">LinkedIn</a></li>
     </ul>
   </div>
 </nav>
@@ -33,10 +31,10 @@
 
   <header role="banner">
     <div class="header-content">
-      <h1>Hello, my name is Habib.<br>
-        I'm a Test Engineer looking to hone my skills as a full stack developer. <br>
-        Nice to meet you!
-      </h1>
+      <h1>Hello, my name is Habib.</h1>
+      <img src="resources/me.jpeg" id="meImage">
+      <h1> I'm a Test Engineer looking to hone my skills as a full stack developer. </h1>
+      <h1> Nice to meet you! </h1>
     </div>
   </header>
 
@@ -48,13 +46,15 @@
         and have a passion for technology so perhaps you won't be surprised to know that I began my professional career
         in a customer service role as a helpdesk representative. Over time I moved into a software role eventually
         becoming the senior representative responsible for consulting clients on API and Single Sign-On implementations.
-        I later became the team lead for that department. Nowadays I work in research in development for a global
+        I later became the team lead for that department. </p><br>
+
+      <p> Nowadays I work in research in development for a global
         communications company as a test engineer where I'm tasked to automate quality checks against our product. In
         this role I'm able to leverage my end user intuition with my excitement for programming. I'm a backend developer
         at heart with interests primarily in data manipulation, reporting, and security but I also enjoy teaching which
         requires me to learn things outside of my primary interests. I feel especially creative when I work on Raspberry
         Pi projects because there's often a physical product to admire. I'm less talented at this though so please just
-        ask to read my code instead so I can feel good about myself :)</p>
+        ask to read my code instead so I can feel good about myself :)</p><br>
 
       <p> When I'm not coding, I'm either thinking about or playing basketball. I enjoy the game, the drills, the body
         mechanics, the statistics, and predictions. One day I hope to crush my pals in fantasy basketball with the help
@@ -69,7 +69,7 @@
 
     <div class="content" id="portfolio">
       <h2>Projects</h2>
-      <ul>
+      <ul class="list-indent">
         <li> Project title:
           <ul>
             <li>
@@ -95,11 +95,31 @@
           <a href="https://github.com/habibians/basketball-rules-quiz">Repo</a>
         </li>
       </ul>
+      <!-- Three column gallery layout -->
+      <div class="row">
+        <p>Click on the thumbnails below:</p>
+        <div class="column">
+          <img src="resources/quiz-app-01.png" alt="Start Page" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="resources/quiz-app-02.png" alt="Sample Question" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="resources/quiz-app-03.png" alt="Sample Result" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+
     </div>
   </section>
 </main>
 
-<footer role="content-info">
+<footer>
   <div class="footer-content">
     <span>I can be reached via <a href="mailto:habib.daof@yahoo.com">email</a></span>
   </div>

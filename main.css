@@ -39,8 +39,14 @@ header {
     color: #2D3235;
 }
 
+div.header-content {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: medium;
+}
+
 section {
-    padding: 3% 0;
+    padding: 3% 8%;
     margin: -10px;
     background-color: #EBE9E9;
     text-align: left;
@@ -53,16 +59,6 @@ section:nth-child(even) {
     background-color: #A5B5BF;
 }
 
-section p {
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
-section ul {
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
 h2 {
     text-align: center;
     font-family: 'Merriweather', serif;
@@ -70,17 +66,19 @@ h2 {
     color: #2D3235;
 }
 
-.links {
-    float: right;
-    font-size: 16px;
-    /*margin-top: 25px;*/
+.horizontal-list li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.links li {
-    display: inline-block;
-    margin-left: 30px;
-    color: white;
+ul.horizontal-list {
+    font-size: small;
+    text-align: center;
+    padding: 0;
+
 }
+
 
 #bio {
     margin: 0 auto;
@@ -90,8 +88,9 @@ h2 {
     margin: 0 auto;
 }
 
-.content {
-    margin: 30px;
+p.content {
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .content li {
@@ -120,4 +119,92 @@ a:hover {
 a:active {
     color: #000;
     font-weight: bolder;
+}
+
+#portfolio ul.list-indent {
+    margin-left: -28px;
+}
+
+img#meImage {
+    max-width: 85%;
+}
+
+/* Image gallery Styles */
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+    padding: 3px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    ul.horizontal-list {
+        font-size: 16px;
+        text-align: right;
+        padding: 0;
+    }
+
+    img#meImage {
+        width: 670px;
+        height: auto;
+    }
+
+    div.content {
+        width: 667px;
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+
+    div.header-content {
+        width: 741px;
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
 }
