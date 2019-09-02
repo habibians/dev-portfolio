@@ -79,7 +79,6 @@ ul.horizontal-list {
 
 }
 
-
 #bio {
     margin: 0 auto;
 }
@@ -101,21 +100,9 @@ p.content {
     font-size: small;
 }
 
-a:link {
-    color: #000;
-    font-weight: bolder;
-}
-
-a:visited {
-    color: #000;
-    font-weight: bolder;
-}
-
-a:hover {
-    color: #000;
-    font-weight: bolder;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
     color: #000;
     font-weight: bolder;
