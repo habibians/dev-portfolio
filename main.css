@@ -149,7 +149,7 @@ img#meImage {
 }
 
 /* Expanding image text */
-#imgtext {
+#imgText {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -158,13 +158,28 @@ img#meImage {
 }
 
 /* Closable button inside the expanded image */
-.closebtn {
+.closeBtn {
     position: absolute;
     top: 10px;
     right: 15px;
     color: white;
     font-size: 35px;
     cursor: pointer;
+}
+
+ul.list-indent > li {
+    font-size: small;
+    list-style-type: none;
+}
+
+ul.list-indent > li > ul > li {
+    font-size: large;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+div.row > p {
+    font-size: small;
 }
 
 @media screen and (min-width: 800px) {
